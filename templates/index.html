@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>Welcome to Aegle Health</title>
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <!--<![endif]-->
+    <!--[if (gte mso 9)|(IE)]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG />
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          width: 600px;
+          margin: 0 auto;
+        }
+        table {
+          border-collapse: collapse;
+        }
+        table,
+        td {
+          mso-table-lspace: 0pt;
+          mso-table-rspace: 0pt;
+        }
+        img {
+          -ms-interpolation-mode: bicubic;
+        }
+      </style>
+    <![endif]-->
+
+    <style type="text/css">
+      :root {
+        --primary: #1b2cc1;
+        --download: #0215bb;
+        --primary-light: #8793ff;
+        --secondary: #ffbe48;
+        --accent: hotpink;
+        --warning: #df6b08;
+        --danger: #c11b1b;
+        --success: #28a745;
+        --text-color: #000000;
+        --text-accent-color: #979797;
+        --alt-bg: #fbfcff;
+      }
+
+      body.aegle-campaign {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background: #efefef;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      div.aegle-campaign__container {
+        max-width: calc(100vw - 8%);
+        width: 100%;
+        margin: 4% auto;
+        background: #fff;
+        border-radius: 5px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      nav.aegle-campaign__navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+      }
+
+      a.aegle-campaign__navbar__Logo {
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .aegle-campaign__navbar__Logo img {
+        max-width: 80px;
+        max-height: 80px;
+      }
+
+      .aegle-campaign__main__hero {
+        height: 400px;
+        background: #1b2cc1;
+
+        color: #fff;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .aegle-campaign__main__hero__left,
+      .aegle-campaign__main__hero__right {
+        width: 100%;
+        height: 100%;
+      }
+
+      .aegle-campaign__main__hero__left {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        font-weight: bold;
+      }
+
+      .aegle-campaign__main__hero__left p {
+        text-align: center;
+      }
+
+      .aegle-campaign__main__hero__right {
+        background: #fff;
+      }
+
+      .aegle-campaign__heading {
+        color: #1b2cc1;
+        margin-top: 50px;
+        padding: 0 50px;
+      }
+
+      .aegle-campaign__paragraph {
+        padding: 30px 50px;
+        color: #000e80;
+        letter-spacing: 0.5px;
+        line-height: 20px;
+      }
+    </style>
+  </head>
+
+  <body class="aegle-campaign">
+    <!-- <div class="aegle-campaign__container">
+      <nav class="aegle-campaign__navbar">
+        <a class="aegle-campaign__navbar__logo" href="https://aeglehealth.io">
+          <img
+            style="max-width: 80px; max-height: 80px"
+            src="https://res.cloudinary.com/teamgrace/image/upload/v1593795514/aegle_zuw2gc.png"
+            alt="Aegle Health Logo"
+          />
+        </a>
+      </nav>
+
+      <main class="aegle-campaign__main">
+        <div class="aegle-campaign__main__hero">
+          <div class="aegle-campaign__main__hero__left">
+            <p>
+              Welcome to <br />
+              <span style="color: var(--secondary);"> Aegle Health</span>
+            </p>
+          </div>
+          <div class="aegle-campaign__main__hero__right">
+            <img
+              style="width: 100%; height: 100%; object-fit: cover; object-position: top;"
+              src="https://res.cloudinary.com/teamgrace/image/upload/v1590800869/Rectangle_ufvlgr.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <h3 class="aegle-campaign__heading">Hi {{name}},</h3>
+
+        <p class="aegle-campaign__paragraph">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
+          sapiente est voluptates modi illum voluptatum, commodi fuga fugiat
+          error ex voluptate nisi alias laborum libero ipsa non distinctio
+          officiis facilis!
+        </p>
+
+        <p class="aegle-campaign__paragraph">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
+          sapiente est voluptates modi illum voluptatum, commodi fuga fugiat
+          error ex voluptate nisi alias laborum libero ipsa non distinctio
+          officiis facilis! Lorem ipsum, dolor sit amet consectetur adipisicing
+          elit. Quia sequi ab, nam, nobis a eligendi pariatur veritatis
+          consequuntur veniam quo laudantium, minima repudiandae quae? Aut natus
+          explicabo et vel aliquid! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Deserunt mollitia eaque est ea possimus architecto
+          eos! Perspiciatis, et quas! Sunt deleniti, aspernatur tempora
+          quibusdam assumenda magnam saepe unde repudiandae ratione. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Repudiandae itaque hic
+          consequatur, maxime doloribus tempore harum dolorem libero aliquam
+          obcaecati sint suscipit et deleniti debitis minima soluta
+          necessitatibus impedit nisi? Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. At, eveniet hic! Nemo harum eaque mollitia soluta
+          corrupti nihil fugit, repudiandae quae quidem optio expedita animi
+          velit consequuntur! Deleniti, distinctio a?
+        </p>
+
+        <p class="aegle-campaign__paragraph">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
+          sapiente est voluptates modi illum voluptatum, commodi fuga fugiat
+          error ex voluptate nisi alias laborum libero ipsa non distinctio
+          officiis facilis!
+        </p>
+      </main>
+    </div> -->
+
+    <table cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td bgcolor="#ffffff">
+          <table align="center" cellpadding="0" cellspacing="0" width="60%">
+            <tr>
+              <td
+                bgcolor="#efefef"
+                align="center"
+                style="padding: 55px 55px 55px 55px;"
+              >
+                <table
+                  align="center"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="600"
+                  style="border-collapse: collapse; border-radius: 10px;"
+                >
+                  <tr>
+                    <td
+                      colspan="2"
+                      bgcolor="#ffffff"
+                      style="padding: 8px 8px 8px 8px;"
+                      align="center"
+                    >
+                      <a
+                        class="aegle-campaign__navbar__logo"
+                        href="https://aeglehealth.io"
+                      >
+                        <img
+                          width="160"
+                          height="80"
+                          style="object-fit: contain; display:block;"
+                          src="https://res.cloudinary.com/teamgrace/image/upload/v1596720794/aegle-email-logo_cn3h6x.png"
+                          alt="Aegle Health Logo"
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      align="center"
+                      colspan="1"
+                      style="width: 100%; height: 200px;"
+                      bgcolor="#1b2cc1"
+                    >
+                      <img
+                        width="580"
+                        style="object-fit: contain; display:block;"
+                        src="https://res.cloudinary.com/teamgrace/image/upload/v1596717998/aegle-welcome-image_xgatsv.png"
+                        alt="Aegle Health Logo"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#ffffff">
+                      <table cellpadding="0" cellspacing="0" width="100%">
+                        <tr style="border: 0">
+                          <td
+                            style="padding: 41px 40px 0px 40px; border: 0; color: #000000; line-height: 20px; letter-spacing: 2%;"
+                          >
+                            <p style="margin: 0; font-weight: normal;">
+                              Hi {{name}},
+                            </p>
+                          </td>
+                        </tr>
+
+                        <tr style="border: 0">
+                          <td
+                            style="padding: 24px 40px 10px 40px; color: #1B2CC1; border: 0; display: block;"
+                          >
+                            <p style="margin: 0">
+                              <strong
+                                >You’re moments away from the future of
+                                Healthcare</strong
+                              >
+                            </p>
+                          </td>
+
+                          <td
+                            style="padding: 36px 40px 20px 40px; border: 0; display: block;"
+                          >
+                            <img
+                              width="100%"
+                              src="https://res.cloudinary.com/teamgrace/image/upload/v1596721445/aegle-email-line_nvzgyf.png"
+                              alt="Dotted line"
+                            />
+                          </td>
+                        </tr>
+
+                        <tr style="border: 0">
+                          <td
+                            style="padding: 34px 40px 20px 40px; border: 0; display: block; color: #000000; line-height: 20px; letter-spacing: 2%;"
+                          >
+                            <p style="margin: 0">
+                              It's great to have you on board. We want you to
+                              start experiencing healthcare without the fuss as
+                              soon as possible, so we've tried to make
+                              onboarding a breeze – We can’t wait to help you
+                              take back control of your health.
+                            </p>
+                          </td>
+
+                          <td
+                            style="padding: 20px 40px 20px 40px; border: 0; display: block; color: #000000; line-height: 20px; letter-spacing: 2%;"
+                          >
+                            <p style="margin: 0">
+                              Here at Aegle, we are building the digital health
+                              service that suits your lifestyle, and we are
+                              setting the ‘gold standard’ for digital healthcare
+                              by delivering a joined up, transparent and simple
+                              patient journey, which will improve patient
+                              experience and clinical outcomes.
+                            </p>
+                          </td>
+
+                          <td
+                            style="padding: 20px 40px 20px 40px; border: 0; display: block; color: #000000; line-height: 20px; letter-spacing: 2%;"
+                          >
+                            <p style="margin: 0">
+                              We are on a mission to engineer the flow of
+                              standard healthcare solutions and support the
+                              heavily burned healthcare system. Armed to the
+                              teeth with technology, we are diving deeper into
+                              the world of traditional healthcare, showing the
+                              world that things can be done better. Things can
+                              be different. From tearing down healthcare borders
+                              to mending the broken trust, we are the disruption
+                              that is needed.
+                            </p>
+                          </td>
+
+                          <td
+                            style="padding: 20px 40px 20px 40px; border: 0; display: block; color: #000000; line-height: 20px; letter-spacing: 2%;"
+                          >
+                            <p style="margin: 0">
+                              Welcome to the next generation healthcare -
+                              intuitive, secure and 100% digital.
+                            </p>
+                          </td>
+
+                          <td
+                            style="padding: 36px 40px 0px 40px; border: 0; display: block; color: #000000; line-height: 20px; letter-spacing: 2%;"
+                          >
+                            <img
+                              width="100%"
+                              src="https://res.cloudinary.com/teamgrace/image/upload/v1596721445/aegle-email-line_nvzgyf.png"
+                              alt="Dotted line"
+                            />
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td
+                            align="center"
+                            style="padding: 28px 50px 52px 50px; border: 0; display: block; color: #000000; line-height: 20px; letter-spacing: 2%;"
+                          >
+                            <p style="margin: 0">
+                              You can reach us via, email at
+                              <strong>support@aeglehealth.io</strong> or give us
+                              a call on <strong>+2347001234511111</strong>. We
+                              are always available to provide clarifications and
+                              answer your questions.
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      colspan="2"
+                      bgcolor="#1B2CC1"
+                      style="height: 214px; border: 0; padding: 39px 40px 42px 40px;"
+                    >
+                      <table cellpadding="0" cellspacing="0" width="100%">
+                        <tr style="border: 0">
+                          <td
+                            align="center"
+                            style="border: 0; padding: 0px 0px 28px 0px;"
+                          >
+                            <a
+                              href="https://www.facebook.com/aeglehealth.io/"
+                              style="padding: 10px 40px 10px 10px"
+                            >
+                              <img
+                                width="25"
+                                height="25"
+                                style="object-fit: contain;"
+                                src="https://res.cloudinary.com/teamgrace/image/upload/v1596723717/aegle-email-fb_oexw1a.png"
+                                alt="facebook"
+                              />
+                            </a>
+                            <a
+                              href="https://twitter.com/Aeglehealth_io"
+                              style="padding: 10px 40px 10px 10px"
+                            >
+                              <img
+                                width="25"
+                                height="25"
+                                style="object-fit: contain;"
+                                src="https://res.cloudinary.com/teamgrace/image/upload/v1596723740/aegle-email-twitter_ndnote.png"
+                                alt="twitter"
+                              />
+                            </a>
+                            <a
+                              href="https://instagram.com/aeglehealth.io?igshid=1vn336dnmsxaz"
+                              style="padding: 10px 40px 10px 10px"
+                            >
+                              <img
+                                width="25"
+                                height="25"
+                                style="object-fit: contain;"
+                                src="https://res.cloudinary.com/teamgrace/image/upload/v1596723780/aegle-email-instagram_zw0gno.png"
+                                alt="instagram"
+                              />
+                            </a>
+                            <a
+                              href="https://www.youtube.com/channel/UCDrypLjT73Vi-pxqOkA7XUA"
+                              style="padding: 10px 0px 10px 10px"
+                            >
+                              <img
+                                width="25"
+                                height="25"
+                                style="object-fit: contain;"
+                                src="https://res.cloudinary.com/teamgrace/image/upload/v1596723822/aegle-email-youtube_iyeoub.png"
+                                alt="youtube"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+
+                        <tr style="border: 0">
+                          <td align="center" style="border: 0; color: #ffffff;">
+                            <p>&copy; 2020 Aegle Health.</p>
+                          </td>
+                        </tr>
+
+                        <tr style="border: 0">
+                          <td
+                            align="center"
+                            style="border: 0; width: 200px; color: #ffffff;"
+                          >
+                            <p style="width: 300px;">
+                              39 Alfred Rewane Road, 7th Floor Mulliner Towers,
+                              Ikoyi, Lagos Nigeria.
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
