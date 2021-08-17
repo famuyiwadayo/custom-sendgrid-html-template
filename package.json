@@ -27,7 +27,7 @@
     "@ntegral/nestjs-sendgrid": "^1.0.0",
     "@sendgrid/mail": "^7.2.2",
     "dotenv": "^8.2.0",
-    "handlebars": "^4.7.6",
+    "handlebars": "^4.7.7",
     "hbs": "^4.1.1",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
