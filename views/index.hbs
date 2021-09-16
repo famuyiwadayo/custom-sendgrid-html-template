@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
     />
-    <title>Welcome to Aegle Health</title>
+    <title>Welcome to Bitmama</title>
     <!--[if !mso]><!-->
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <!--<![endif]-->
@@ -39,432 +39,330 @@
     <![endif]-->
 
     <style type="text/css">
-      :root {
-        --primary: #1b2cc1;
-        --download: #0215bb;
-        --primary-light: #8793ff;
-        --secondary: #ffbe48;
-        --accent: hotpink;
-        --warning: #df6b08;
-        --danger: #c11b1b;
-        --success: #28a745;
-        --text-color: #000000;
-        --text-accent-color: #979797;
-        --alt-bg: #fbfcff;
+      {{!-- @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap') --}}
+      @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap');
+      @media screen and (-webkit-min-device-pixel-ratio:0) {
+        :root {
+          --primary: #1b2cc1;
+          --download: #0215bb;
+          --primary-light: #8793ff;
+          --secondary: #ffbe48;
+          --accent: hotpink;
+          --warning: #df6b08;
+          --danger: #c11b1b;
+          --success: #28a745;
+          --text-color: #000000;
+          --text-accent-color: #979797;
+          --alt-bg: #fbfcff;
+        }
+
+      
+        .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td {line-height: 100%; mso-line-height-rule:exactly;}
+        .ExternalClass {width: 100%;}
+
+        * {
+          box-sizing: border-box;
+        }
+
+        html, body {
+          margin: 0;
+        }
+
+        .aegle-campaign__paragraph {
+          mso-line-height-rule:exactly;
+        }
       }
 
-      body.aegle-campaign {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        background: #efefef;
-        font-family: Arial, Helvetica, sans-serif;
+      .bitmama_template {
+        padding: 0px 0;
       }
 
-      div.aegle-campaign__container {
-        max-width: calc(100vw - 8%);
+      .bitmama_template__wrapper {
         width: 100%;
-        margin: 4% auto;
-        background: #fff;
-        border-radius: 5px;
+        border-collapse: collapse;
       }
 
-      * {
-        box-sizing: border-box;
+      .bitmama_template__container {
+        width: 50%;
+        border-collapse: collapse;
+        border-radius: 8px; 
+        overflow: hidden;
       }
 
-      nav.aegle-campaign__navbar {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 40px;
+      .bitmama_template__table-detail {
+        padding: 0px 50px;
+      }
+      .bitmama_template__table-detail__text {
+        margin: 8px 0;
+        line-height: 28px;
+        mso-line-height-rule:exactly;
       }
 
-      a.aegle-campaign__navbar__Logo {
-        text-decoration: none;
-        cursor: pointer;
+      .social-link__img {
+        width: 32px;
+        height: 32px;
+        object-fit: contain;
       }
 
-      .aegle-campaign__navbar__Logo img {
-        max-width: 80px;
-        max-height: 80px;
-      }
-
-      .aegle-campaign__main__hero {
-        height: 400px;
-        background: #1b2cc1;
-
-        color: #fff;
-
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .aegle-campaign__main__hero__left,
-      .aegle-campaign__main__hero__right {
-        width: 100%;
-        height: 100%;
-      }
-
-      .aegle-campaign__main__hero__left {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        font-size: 3rem;
-        font-weight: bold;
-      }
-
-      .aegle-campaign__main__hero__left p {
-        text-align: center;
-      }
-
-      .aegle-campaign__main__hero__right {
-        background: #fff;
-      }
-
-      .aegle-campaign__heading {
-        color: #1b2cc1;
-        margin-top: 50px;
-        padding: 0 50px;
-      }
-
-      .aegle-campaign__paragraph {
+      .footer {
         padding: 30px 50px;
-        color: #000e80;
-        letter-spacing: 0.5px;
-        line-height: 20px;
+        max-width: 50%;
+        width: 100%;
+        margin: 0 auto;
       }
+
+      .check-icon {
+        width: 100px;
+      }
+
+      .table-col-1 {
+          padding-left: 60px;
+          font-size: 15px;
+        }
+
+        .table-col-2 {
+          padding-right: 60px;
+          font-size: 16px;
+        }
+
+      @media only screen and (max-width: 620px) {
+        .footer {
+          padding: 30px !important;
+          max-width: 100%;
+          width: 100%;
+          margin: 0 auto;
+        }
+
+        .table-col-1 {
+          padding-left: 20px;
+          font-size: 15px;
+        }
+
+        .table-col-2 {
+          padding-right: 20px;
+          font-size: 16px;
+        }
+
+        .check-icon {
+          width: 80px;
+        }
+
+        .bitmama_template {
+          padding: 0px !important;
+        }
+        .bitmama_template__container {
+          width: 98% !important;
+        }
+
+        .bitmama_template__table-detail {
+          padding: 0px 20px !important;
+        }
+
+        .bitmama_template__table-detail__text, .bitmama_template__table-detail__footer-text {
+          font-size: 16px;
+          margin: 0;
+        }
+
+        .bitmama_template__table-detail__follow {
+          font-size: 11px;
+        }
+
+        .social-link__img {
+          width: 28px !important;
+          height: 28px !important;
+        }
+      }
+
+      @media (min-width: 621px) and (max-width: 1200px) {
+        .footer {
+          padding: 30px !important;
+          max-width: 70%;
+          width: 100%;
+          margin: 0 auto;
+        }
+
+        .table-col-1 {
+          padding-left: 80px;
+          font-size: 15px;
+        }
+
+        .table-col-2 {
+          padding-right: 80px;
+          font-size: 16px;
+        }
+
+        .check-icon {
+          width: 100px;
+        }
+
+        .bitmama_template {
+          padding: 0px !important;
+        }
+        .bitmama_template__container {
+          width: 70% !important;
+        }
+
+        .bitmama_template__table-detail {
+          padding: 0px 20px !important;
+        }
+
+        .bitmama_template__table-detail__text, .bitmama_template__table-detail__footer-text {
+          font-size: 16px;
+          margin: 0;
+        }
+
+        .bitmama_template__table-detail__follow {
+          font-size: 11px;
+        }
+
+        .social-link__img {
+          width: 28px !important;
+          height: 28px !important;
+        }
+      }
+      
     </style>
   </head>
-
-  <body class="aegle-campaign">
-    <!-- <div class="aegle-campaign__container">
-      <nav class="aegle-campaign__navbar">
-        <a class="aegle-campaign__navbar__logo" href="https://aeglehealth.io">
-          <img
-            style="max-width: 80px; max-height: 80px"
-            src="https://res.cloudinary.com/teamgrace/image/upload/v1593795514/aegle_zuw2gc.png"
-            alt="Aegle Health Logo"
-          />
-        </a>
-      </nav>
-
-      <main class="aegle-campaign__main">
-        <div class="aegle-campaign__main__hero">
-          <div class="aegle-campaign__main__hero__left">
-            <p>
-              Welcome to <br />
-              <span style="color: var(--secondary);"> Aegle Health</span>
-            </p>
-          </div>
-          <div class="aegle-campaign__main__hero__right">
-            <img
-              style="width: 100%; height: 100%; object-fit: cover; object-position: top;"
-              src="https://res.cloudinary.com/teamgrace/image/upload/v1590800869/Rectangle_ufvlgr.png"
-              alt=""
-            />
-          </div>
-        </div>
-
-        <h3 class="aegle-campaign__heading">Hi {{name}},</h3>
-
-        <p class="aegle-campaign__paragraph">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
-          sapiente est voluptates modi illum voluptatum, commodi fuga fugiat
-          error ex voluptate nisi alias laborum libero ipsa non distinctio
-          officiis facilis!
-        </p>
-
-        <p class="aegle-campaign__paragraph">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
-          sapiente est voluptates modi illum voluptatum, commodi fuga fugiat
-          error ex voluptate nisi alias laborum libero ipsa non distinctio
-          officiis facilis! Lorem ipsum, dolor sit amet consectetur adipisicing
-          elit. Quia sequi ab, nam, nobis a eligendi pariatur veritatis
-          consequuntur veniam quo laudantium, minima repudiandae quae? Aut natus
-          explicabo et vel aliquid! Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Deserunt mollitia eaque est ea possimus architecto
-          eos! Perspiciatis, et quas! Sunt deleniti, aspernatur tempora
-          quibusdam assumenda magnam saepe unde repudiandae ratione. Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Repudiandae itaque hic
-          consequatur, maxime doloribus tempore harum dolorem libero aliquam
-          obcaecati sint suscipit et deleniti debitis minima soluta
-          necessitatibus impedit nisi? Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. At, eveniet hic! Nemo harum eaque mollitia soluta
-          corrupti nihil fugit, repudiandae quae quidem optio expedita animi
-          velit consequuntur! Deleniti, distinctio a?
-        </p>
-
-        <p class="aegle-campaign__paragraph">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
-          sapiente est voluptates modi illum voluptatum, commodi fuga fugiat
-          error ex voluptate nisi alias laborum libero ipsa non distinctio
-          officiis facilis!
-        </p>
-      </main>
-    </div> -->
-
-    <table cellpadding="0" cellspacing="0" width="100%">
-      <tr>
-        <td bgcolor="#ffffff">
-          <table align="center" cellpadding="0" cellspacing="0" width="60%">
-            <tr>
-              <td
-                bgcolor="#efefef"
-                align="center"
-                style="padding: 55px 55px 55px 55px;"
-              >
+  <body style="margin: 0; padding: 0; font-family: 'Urbanist', sans-serif; color:  #0A1641; font-size: 18px !important; font-weight: 300; letter-spacing: -2%;">
+    <table 
+      role="presentation"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      width="100%">
+        <tr align="center">
+            <td bgcolor="#ffffff">
                 <table
-                  align="center"
+                  role="presentation"
+                  width="100%"
+                  bgcolor="#f9f9f9"
                   cellpadding="0"
                   cellspacing="0"
-                  width="600"
-                  style="border-collapse: collapse; border-radius: 10px;"
+                  height="100%"
+                  {{!-- style="padding: 100px 0" --}}
+                  class="bitmama_template"
+                > 
+                <tr>
+              <td>
+                <table
+                  role="presentation"
+                  align="center"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                  bgcolor="#f9f9f9"
+                  class="bitmama_template__wrapper"
                 >
-                  <tr>
-                    <td
-                      colspan="2"
-                      bgcolor="#ffffff"
-                      style="padding: 8px 8px 8px 8px;"
-                      align="center"
-                    >
-                      <a
-                        class="aegle-campaign__navbar__logo"
-                        href="https://aeglehealth.io"
+                <tr align="center" height="150px"> 
+                  <td><img alt="" width="80px" src="https://res.cloudinary.com/bitmama/image/upload/v1628104230/email_templates/welcome_email/image_6_bg0eth.png" /></td>
+                </tr>
+
+                  <tr align="center">
+                    <td>
+                      <table
+                        role="presentation"
+                        align="center"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="60%"
+                        bgcolor="white"
+                        class="bitmama_template__container"
                       >
-                        <img
-                          width="160"
-                          height="80"
-                          style="object-fit: contain; display:block;"
-                          src="https://res.cloudinary.com/teamgrace/image/upload/v1596720794/aegle-email-logo_cn3h6x.png"
-                          alt="Aegle Health Logo"
-                        />
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      align="center"
-                      colspan="1"
-                      style="width: 100%; height: 200px;"
-                      bgcolor="#1b2cc1"
-                    >
-                      <img
-                        width="580"
-                        style="object-fit: contain; display:block;"
-                        src="https://res.cloudinary.com/teamgrace/image/upload/v1596717998/aegle-welcome-image_xgatsv.png"
-                        alt="Aegle Health Logo"
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td bgcolor="#ffffff">
-                      <table cellpadding="0" cellspacing="0" width="100%">
-                        <tr style="border: 0">
-                          <td
-                            style="padding: 41px 40px 0px 40px; border: 0; color: #000000; line-height: 20px; letter-spacing: 2%;"
-                          >
-                            <p style="margin: 0; font-weight: normal;">
-                              Hi {{name}},
-                            </p>
+                        <tr align="center" >
+                          <td colspan="2" style="position: relative; padding: 60px 0; padding-bottom: 30px">
+                              <div style="color: white; position: relative; z-index: 999"> 
+                                <img class="check-icon" style="object-fit: contain;" src="https://res.cloudinary.com/bitmama/image/upload/v1631380399/email_templates/credit_template/Asset_2_i7bgnk.png" />
+                              </div>
+                              <h2>Credit Alert</h2>
+                          </td>
+                        </tr>
+                        <tr colspan="2">
+                          <td colspan="2" class="bitmama_template__table-detail" style="padding: 0px 80px; margin: 0;">
+                            <p class="bitmama_template__table-detail__text">Hello {{name}},</p>
+                          </td>
+                        </tr>
+                        <tr colspan="2" style="border-bottom: 1px solid #f7f5f5">
+                          <td colspan="2" class="bitmama_template__table-detail" style="padding: 0px 80px; margin: 0; padding-bottom: 20px">
+                            <p class="bitmama_template__table-detail__text" style="padding-bottom: 40px">Your bitmama wallet has been created successfully.</p>
+                          </td>
+                        </tr>
+                        <tr><td style="height: 10px"></td></tr>
+                        <tr align="center">
+                          <td colspan="2">
+                            <h4>See Transaction Details</h4>
                           </td>
                         </tr>
 
-                        <tr style="border: 0">
-                          <td
-                            style="padding: 24px 40px 10px 40px; color: #1B2CC1; border: 0; display: block;"
-                          >
-                            <p style="margin: 0">
-                              <strong
-                                >You’re moments away from the future of
-                                Healthcare</strong
-                              >
-                            </p>
+                        <tr align="center">
+                          <td>
+                            <p class="table-col-1" style="margin: 10px 0; text-align: left;">Amount</p>
                           </td>
-
-                          <td
-                            style="padding: 36px 40px 20px 40px; border: 0; display: block;"
-                          >
-                            <img
-                              width="100%"
-                              src="https://res.cloudinary.com/teamgrace/image/upload/v1596721445/aegle-email-line_nvzgyf.png"
-                              alt="Dotted line"
-                            />
+                          <td>
+                            <p class="table-col-2" style="margin: 10px 0; font-weight: bold; text-align: right;">N1,210.00</p>
                           </td>
                         </tr>
 
-                        <tr style="border: 0">
-                          <td
-                            style="padding: 34px 40px 20px 40px; border: 0; display: block; color: #000000; line-height: 20px; letter-spacing: 2%;"
-                          >
-                            <p style="margin: 0">
-                              It's great to have you on board. We want you to
-                              start experiencing healthcare without the fuss as
-                              soon as possible, so we've tried to make
-                              onboarding a breeze – We can’t wait to help you
-                              take back control of your health.
-                            </p>
+                        <tr align="center">
+                          <td>
+                            <p class="table-col-1" style="margin: 10px 0; text-align: left;">Reference</p>
                           </td>
-
-                          <td
-                            style="padding: 20px 40px 20px 40px; border: 0; display: block; color: #000000; line-height: 20px; letter-spacing: 2%;"
-                          >
-                            <p style="margin: 0">
-                              Here at Aegle, we are building the digital health
-                              service that suits your lifestyle, and we are
-                              setting the ‘gold standard’ for digital healthcare
-                              by delivering a joined up, transparent and simple
-                              patient journey, which will improve patient
-                              experience and clinical outcomes.
-                            </p>
+                          <td>
+                            <p class="table-col-2" style="margin: 10px 0; font-weight: bold; text-align: right;">FLC230621382e11880a</p>
                           </td>
+                        </tr>
 
-                          <td
-                            style="padding: 20px 40px 20px 40px; border: 0; display: block; color: #000000; line-height: 20px; letter-spacing: 2%;"
-                          >
-                            <p style="margin: 0">
-                              We are on a mission to engineer the flow of
-                              standard healthcare solutions and support the
-                              heavily burned healthcare system. Armed to the
-                              teeth with technology, we are diving deeper into
-                              the world of traditional healthcare, showing the
-                              world that things can be done better. Things can
-                              be different. From tearing down healthcare borders
-                              to mending the broken trust, we are the disruption
-                              that is needed.
-                            </p>
+                        <tr align="center">
+                          <td>
+                            <p class="table-col-1" style="margin: 10px 0; text-align: left;">Date</p>
                           </td>
-
-                          <td
-                            style="padding: 20px 40px 20px 40px; border: 0; display: block; color: #000000; line-height: 20px; letter-spacing: 2%;"
-                          >
-                            <p style="margin: 0">
-                              Welcome to the next generation healthcare -
-                              intuitive, secure and 100% digital.
-                            </p>
-                          </td>
-
-                          <td
-                            style="padding: 36px 40px 0px 40px; border: 0; display: block; color: #000000; line-height: 20px; letter-spacing: 2%;"
-                          >
-                            <img
-                              width="100%"
-                              src="https://res.cloudinary.com/teamgrace/image/upload/v1596721445/aegle-email-line_nvzgyf.png"
-                              alt="Dotted line"
-                            />
+                          <td>
+                            <p class="table-col-2" style="margin: 10px 0; font-weight: bold; text-align: right;">23 Jun 2021 20:22:00</p>
                           </td>
                         </tr>
 
                         <tr>
-                          <td
-                            align="center"
-                            style="padding: 28px 50px 52px 50px; border: 0; display: block; color: #000000; line-height: 20px; letter-spacing: 2%;"
-                          >
-                            <p style="margin: 0">
-                              You can reach us via, email at
-                              <strong>support@aeglehealth.io</strong> or give us
-                              a call on <strong>+2347001234511111</strong>. We
-                              are always available to provide clarifications and
-                              answer your questions.
-                            </p>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      colspan="2"
-                      bgcolor="#1B2CC1"
-                      style="height: 214px; border: 0; padding: 39px 40px 42px 40px;"
-                    >
-                      <table cellpadding="0" cellspacing="0" width="100%">
-                        <tr style="border: 0">
-                          <td
-                            align="center"
-                            style="border: 0; padding: 0px 0px 28px 0px;"
-                          >
-                            <a
-                              href="https://www.facebook.com/aeglehealth.io/"
-                              style="padding: 10px 40px 10px 10px"
-                            >
-                              <img
-                                width="25"
-                                height="25"
-                                style="object-fit: contain;"
-                                src="https://res.cloudinary.com/teamgrace/image/upload/v1596723717/aegle-email-fb_oexw1a.png"
-                                alt="facebook"
-                              />
-                            </a>
-                            <a
-                              href="https://twitter.com/Aeglehealth_io"
-                              style="padding: 10px 40px 10px 10px"
-                            >
-                              <img
-                                width="25"
-                                height="25"
-                                style="object-fit: contain;"
-                                src="https://res.cloudinary.com/teamgrace/image/upload/v1596723740/aegle-email-twitter_ndnote.png"
-                                alt="twitter"
-                              />
-                            </a>
-                            <a
-                              href="https://instagram.com/aeglehealth.io?igshid=1vn336dnmsxaz"
-                              style="padding: 10px 40px 10px 10px"
-                            >
-                              <img
-                                width="25"
-                                height="25"
-                                style="object-fit: contain;"
-                                src="https://res.cloudinary.com/teamgrace/image/upload/v1596723780/aegle-email-instagram_zw0gno.png"
-                                alt="instagram"
-                              />
-                            </a>
-                            <a
-                              href="https://www.youtube.com/channel/UCDrypLjT73Vi-pxqOkA7XUA"
-                              style="padding: 10px 0px 10px 10px"
-                            >
-                              <img
-                                width="25"
-                                height="25"
-                                style="object-fit: contain;"
-                                src="https://res.cloudinary.com/teamgrace/image/upload/v1596723822/aegle-email-youtube_iyeoub.png"
-                                alt="youtube"
-                              />
-                            </a>
-                          </td>
-                        </tr>
-
-                        <tr style="border: 0">
-                          <td align="center" style="border: 0; color: #ffffff;">
-                            <p>&copy; 2020 Aegle Health.</p>
-                          </td>
-                        </tr>
-
-                        <tr style="border: 0">
-                          <td
-                            align="center"
-                            style="border: 0; width: 200px; color: #ffffff;"
-                          >
-                            <p style="width: 300px;">
-                              39 Alfred Rewane Road, 7th Floor Mulliner Towers,
-                              Ikoyi, Lagos Nigeria.
-                            </p>
+                          <td colspan="2" style="padding:50px;">
                           </td>
                         </tr>
                       </table>
                     </td>
                   </tr>
                 </table>
+
+                <table 
+                    role="presentation"
+                    align="center"
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                    width="100%"
+                    bgcolor="#02a438">
+                  <tr align="center">
+                    <td>
+                      <div class="footer">
+                        <p style="text-align: left; margin-bottom: 2px; color: white;">The Bitmama Team</p>
+                        <p style="text-align: left; margin-top: 2px; color: white;">&copy; 2021 Bitmama.io</p>
+
+                        <p style="text-align: left;">
+                          <a href="#" style="display: inline-block; width: 120px">
+                          <img width="120px" src="https://res.cloudinary.com/bitmama/image/upload/v1625816703/changera_landing/svgs/appleStore_lxxnlx.png" alt="" />
+                        </a>
+                        <a href="#" style="display: inline-block; ">
+                          <img width="120px" src="https://res.cloudinary.com/bitmama/image/upload/v1625816705/changera_landing/svgs/googlePlay_ykondt.png" alt="" />
+                        </a>
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
               </td>
             </tr>
           </table>
-        </td>
-      </tr>
+            </td>
+        </tr>
     </table>
   </body>
-</html>
+  </html>

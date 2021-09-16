@@ -8,12 +8,17 @@ export class AppController {
 
   @Get()
   root(@Res() res: Response) {
-    return res.render('index', { name: 'Dayo Famuyiwa' });
+    return res.render('index', {
+      confirmationLink: 'https://www.genera.finance/?ref=DtuEy&7',
+      referrerLink: 'https://www.genera.finance/?ref=DtuEy&7',
+      name: 'Grace',
+      customer_name: 'Grace',
+    });
   }
 
   @Post(':email')
   async sendEmail(@Param('email') email: string) {
     console.log(email);
-    await this.appService.sendEmail(email, 'Adewale Olaoye');
+    await this.appService.sendEmail(email, 'Dayo Famuyiwa');
   }
 }
