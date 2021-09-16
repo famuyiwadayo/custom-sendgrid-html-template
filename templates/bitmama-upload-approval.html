@@ -104,10 +104,7 @@
       }
 
       .footer {
-        padding: 30px 0;
-        max-width: 86%;
-        width: 100%;
-        margin: 0 auto;
+        padding: 30px;
       }
 
       .footer__inner {
@@ -131,10 +128,8 @@
       @media only screen and (max-width: 620px) {
 
         .footer {
-          padding: 30px 0 !important;
-          max-width: 100%;
-          width: 100%;
-          margin: 0 auto;
+          padding: 30px !important;
+    
         }
 
         .footer__inner {
@@ -183,10 +178,7 @@
 
       @media (min-width: 621px) and (max-width: 1200px) {
         .footer {
-          padding: 30px 0 !important;
-          max-width: 94%;
-          width: 100%;
-          margin: 0 auto;
+          padding: 30px !important;
         }
 
         .table-col-1 {
@@ -274,106 +266,59 @@
                         border="0"
                         cellpadding="0"
                         cellspacing="0"
-                        width="60%"
+                        width="86%"
                         bgcolor="white"
                         class="bitmama_template__container"
                       >
-                        <tr align="center" >
-                          <td colspan="2" style="position: relative; padding: 60px 0; padding-bottom: 30px">
-                              <h2>Debit Alert</h2>
+                        <tr align="center">
+                          <td colspan="2" style="background: #02a438; height: 200px; position: relative;">
+                              <h2 style="color: white">Approval Pending</h2>
                           </td>
                         </tr>
+
+                        <tr height="100px">
+                          <td colspan="2" style="padding:10px;">
+                          </td>
+                        </tr>
+
                         <tr colspan="2">
                           <td colspan="2" class="bitmama_template__table-detail" style="padding: 0px 80px; margin: 0;">
                             <p class="bitmama_template__table-detail__text">Hello {{name}},</p>
                           </td>
                         </tr>
-                        <tr colspan="2" style="border-bottom: 1px solid #f7f5f5">
-                          <td colspan="2" class="bitmama_template__table-detail" style="padding: 0px 80px; margin: 0; padding-bottom: 20px">
-                            <p class="bitmama_template__table-detail__text" style="padding-bottom: 40px">Your bitmama wallet has been debited successfully.</p>
-                          </td>
-                        </tr>
-                        <tr><td style="height: 10px"></td></tr>
-                        <tr align="center">
-                          <td colspan="2">
-                            <h4>See Transaction Details</h4>
-                          </td>
+
+                        <tr>
+                          <td colspan="2" style="padding:10px;"></td>
                         </tr>
 
-                        <tr align="center">
-                          <td>
-                            <p class="table-col-1" style="margin: 10px 0; text-align: left;">Amount</p>
-                          </td>
-                          <td>
-                            <p class="table-col-2" style="margin: 10px 0; font-weight: bold; text-align: right;">{{amount}}</p>
-                          </td>
-                        </tr>
-
-                        <tr align="center">
-                          <td>
-                            <p class="table-col-1" style="margin: 10px 0; text-align: left;">Reference</p>
-                          </td>
-                          <td>
-                            <p class="table-col-2" style="margin: 10px 0; font-weight: bold; text-align: right;">{{reference}}</p>
-                          </td>
-                        </tr>
-
-                        <tr align="center">
-                          <td>
-                            <p class="table-col-1" style="margin: 10px 0; text-align: left;">Date</p>
-                          </td>
-                          <td>
-                            <p class="table-col-2" style="margin: 10px 0; font-weight: bold; text-align: right;">{{date}}</p>
-                          </td>
-                        </tr>
-
-
-                        <tr colspan="2" style="border-bottom: 1px solid #f7f5f5">
-                          <td colspan="2" class="bitmama_template__table-detail" style="padding: 0px 80px; margin: 0; padding-bottom: 20px">
-                            <p class="bitmama_template__table-detail__text" style="padding-bottom: 40px"></p>
-                          </td>
-                        </tr>
-                        <tr><td style="height: 50px"></td></tr>
 
                         <tr colspan="2">
                           <td colspan="2" class="bitmama_template__table-detail" style="padding: 0px 80px; margin: 0; padding-bottom: 20px">
-                            <p class="bitmama_template__table-detail__text" style="padding-bottom: 5px">Please note that withdrawals might 2 to 3 working days to be processed.</p>
-                            <p class="bitmama_template__table-detail__text" style="padding-bottom: 5px">If you didn't perform this operation, <a href="{{link}}">click here.</a></p>
+                            <p class="bitmama_template__table-detail__text" style="padding-bottom: 2px">Your documents have been uploaded successfully and are now pending approval.</p>
                             <p class="bitmama_template__table-detail__text" style="padding-bottom: 0px">Cheers</p>
                           </td>
                         </tr>
 
-                        <tr><td style="height: 50px"></td></tr>
+                        <tr>
+                          <td>
+                            <div class="footer">
+                              <div class="footer__inner">
+                                  <p style="text-align: left; margin-bottom: 2px; color: black;">The Bitmama Team</p>
+                                  <p style="text-align: left; margin-top: 2px; color: black;">&copy; 2021 <a style="color: black" href="http://www.bitmama.io">Bitmama.io</a></p>
+
+                                  <p style="text-align: left;">
+                                    <a href="https://apps.apple.com/ng/app/bitmama/id1561857024" style="display: inline-block; width: 120px">
+                                    <img width="120px" src="https://res.cloudinary.com/bitmama/image/upload/v1625816703/changera_landing/svgs/appleStore_lxxnlx.png" alt="" />
+                                  </a>
+                                  <a href="https://play.google.com/store/apps/details?id=com.bitmama.bitmama" style="display: inline-block; ">
+                                    <img width="120px" src="https://res.cloudinary.com/bitmama/image/upload/v1625816705/changera_landing/svgs/googlePlay_ykondt.png" alt="" />
+                                  </a>
+                                  </p>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
                       </table>
-                    </td>
-                  </tr>
-                </table>
-
-                <table 
-                    role="presentation"
-                    align="center"
-                    border="0"
-                    cellpadding="0"
-                    cellspacing="0"
-                    width="100%"
-                    bgcolor="#02a438">
-                  <tr align="center">
-                    <td>
-                      <div class="footer">
-                        <div class="footer__inner">
-                            <p style="text-align: left; margin-bottom: 2px; color: white;">The Bitmama Team</p>
-                            <p style="text-align: left; margin-top: 2px; color: white;">&copy; 2021 <a style="color: white" href="http://www.bitmama.io">Bitmama.io</a></p>
-
-                            <p style="text-align: left;">
-                              <a href="https://apps.apple.com/ng/app/bitmama/id1561857024" style="display: inline-block; width: 120px">
-                              <img width="120px" src="https://res.cloudinary.com/bitmama/image/upload/v1625816703/changera_landing/svgs/appleStore_lxxnlx.png" alt="" />
-                            </a>
-                            <a href="https://play.google.com/store/apps/details?id=com.bitmama.bitmama" style="display: inline-block; ">
-                              <img width="120px" src="https://res.cloudinary.com/bitmama/image/upload/v1625816705/changera_landing/svgs/googlePlay_ykondt.png" alt="" />
-                            </a>
-                            </p>
-                        </div>
-                      </div>
                     </td>
                   </tr>
                 </table>

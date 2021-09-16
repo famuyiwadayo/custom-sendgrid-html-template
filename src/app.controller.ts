@@ -13,6 +13,8 @@ export class AppController {
       referrerLink: 'https://www.genera.finance/?ref=DtuEy&7',
       name: 'Grace',
       customer_name: 'Grace',
+      amount: 'N1,200.00', reference: "FLC230621382e11880a", date: '23 Jun 2021 20:22:00',
+      link: 'https://bitmama.io'
     });
   }
 

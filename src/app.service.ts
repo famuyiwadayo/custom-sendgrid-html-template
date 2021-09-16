@@ -15,18 +15,18 @@ export class AppService {
 
   async sendEmail(email: string, name: string) {
     const html = fs
-      .readFileSync(path.join(__dirname, '..', '/templates/yoda-welcome.html'))
+      .readFileSync(path.join(__dirname, '..', '/templates/bitmama-debit.html'))
       .toString();
     const template = hbs.compile(html),
-      htmlToSend = template({ name, link });
+      htmlToSend = template({ name, amount: 'N2,500.00', reference: 'FLC230621382e11880a', date: '23 Jun 2021 20:22:00', link: 'http://www.famuyiwadayo.com' });
     // Logger.debug(html);
     await this.client.send({
       from: {
-        name: 'Aegle Health',
-        email: 'support@aeglehealth.io',
+        name: 'Bitmama',
+        email: 'support@bitmama.io',
       },
       to: email,
-      subject: 'Welcome to Aegle Health',
+      subject: 'Credit Alert',
       html: htmlToSend,
     });
   }
